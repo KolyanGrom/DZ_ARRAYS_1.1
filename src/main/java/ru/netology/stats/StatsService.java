@@ -49,7 +49,7 @@ public class StatsService {
     public int howManyMonthMinSales(long[] sales) {
         int minScoreMonth = 0;
 
-        calcAverageAmount service = new calcAverageAmount();
+        StatsService service = new StatsService();
         int calcAverageAmount = service.calcAverageAmount(sales);
         for (long t : sales) {
             if (t <= calcAverageAmount) {
@@ -64,7 +64,7 @@ public class StatsService {
     public int howManyMonthMaxSales(long[] sales) {
         int maxScoreMonth = 0;
 
-        calcAverageAmount service = new calcAverageAmount();
+        StatsService service = new StatsService();
         int calcAverageAmount = service.calcAverageAmount(sales);
         for (long t : sales) {
             if (t > calcAverageAmount) {
